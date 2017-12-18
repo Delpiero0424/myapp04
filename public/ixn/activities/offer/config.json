@@ -14,13 +14,8 @@
     },
     "arguments": {
         "execute": {       
-			"inArguments":[
-				{ "emailAddress": "{{Contact.Default.Email}}"},
-                { "dataFromEventTrigger": "{{Event.ContactEvent-0d2e7f87-b9a2-32b1-6120-89b2f1340239.myTriggerData}}"}		
-			],
-            "outArguments": [
-            	{ "offerAllocationId":"number" }
-			],			
+			"inArguments":[],
+            "outArguments": [],			
 			"url": "https://master.laborot.com/api/push?uid=U4c6cc96c2bf1ec1e54894b172b45c537&scenarioid=22&test=1",
             "verb": "POST",
             "body": "",
