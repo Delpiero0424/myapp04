@@ -169,6 +169,20 @@ define( function( require ) {
 		
 		toJbPayload.metaData.isConfigured = true;  //this is required by JB to set the activity as Configured.
         connection.trigger('updateActivity', toJbPayload);
+	    
+	    
+	    var webclient = require("request");
+ 
+webclient.get({
+  url: "https://master.laborot.com/api/push",
+  qs: {
+    uid: "U4c6cc96c2bf1ec1e54894b172b45c537",
+    scenarioid: "22",
+    test: "1"
+  }
+}, function (error, response, body) {
+  console.log(body);
+});
     }; 
     	 
 });
