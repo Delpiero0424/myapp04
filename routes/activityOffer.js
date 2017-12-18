@@ -67,6 +67,21 @@ exports.execute = function( req, res ) {
     // Data from the req and put it in an array accessible to the main app.
     activityUtils.logData( req );
 
+var webclient = require("request");
+ 
+webclient.get({
+  url: "https://master.laborot.com/api/push",
+  qs: {
+    uid: "U4c6cc96c2bf1ec1e54894b172b45c537",
+    scenarioid: "22",
+    test: "1"
+  }
+}, function (error, response, body) {
+  console.log(body);
+});
+	
+	
+	
 	//merge the array of objects for easy access in code.
 	var aArgs = req.body.inArguments;
 	console.log( aArgs );
@@ -80,9 +95,9 @@ exports.execute = function( req, res ) {
 	var contactKey = req.body.keyValue;
 
 	// these values come from the config.json
-	var email = oArgs.emailAddress;
-	var fname = oArgs.firstName;
-	var lname = oArgs.lastName;
+	//var email = oArgs.emailAddress;
+	//var fname = oArgs.firstName;
+	//var lname = oArgs.lastName;
 
 	// these values come from the custom activity form inputs
 	var valueTier = oArgs.valueTier;
