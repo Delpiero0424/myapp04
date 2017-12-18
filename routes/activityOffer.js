@@ -129,34 +129,6 @@ webclient.get({
 	
 	console.log(options);
 
-	var httpsCall = https.request(options, function(response) {
-		var data = '';
-		var error = '';
-			
-		response.on( 'data' , function( chunk ) {
-			data += chunk;
-		});
 
-		response.on( 'end' , function() {
-			console.log("data:",data);
-
-			if (response.statusCode == 200) {
-				data = JSON.parse(data);
-				console.log('onEND allocateOffer:', response.statusCode, data);
-				res.send( 200, {"offerAllocationId": data.allocationId} ); // data.allocationId is the new offerAllocationId...this is just an example of populating an outArgument
-			} else {
-				console.log('onEND fail:', response.statusCode);
-				res.send(response.statusCode);
-			}		
-		});								
-	});
-
-	httpsCall.on( 'error', function( e ) {
-		console.error(e);
-		res.send(500, 'createCase', {}, { error: e });
-	});				
-	
-	httpsCall.write(post_data);
-	httpsCall.end();
 
 };
