@@ -34,7 +34,7 @@
         }
     },
     "configurationArguments": {
-    	"applicationExtensionKey": "7df71483-d6da-4093-b4b9-62a195e950db",
+    	"applicationExtensionKey": "6ffeb632-a58e-48f0-a728-718f30ac4223",
         "defaults": { "example_default_key": "example_default_value"},             
         "save": {
         	"url": "https://jb-test-app04.herokuapp.com/ixn/activities/offer/save/",
