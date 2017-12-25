@@ -17,10 +17,10 @@ var app = express();
 // , these can be stored in a separate file using a module like config
 
 var APIKeys = {
-    appId           : '54a0da69-c0de-400a-baaf-ad204fb448f2',
-    clientId        : 'fwskxsfubv6xgsow968pq8k1',
-    clientSecret    : 'PAMGKkyA1duU9ZHGYK3HzrOt',
-    appSignature    : 'elqKY428Qsq3V9XFKhs5c5t9mRsCqc_o9XZa1fQw1HAhEVxs7sd4PowO9STgc6rKMbIVZDidub-xY8uxjZeyRBiaZCfzc7KNb0cM1u5tMgutCGwDbX0g3Owt7fXYYUssCzB6CGPpya7_cFzJv6leKPwPoRdGaW1DZujx1PPCD0Wyar75Ldi2sutOQ44yWb0YbqI3chivI0NDYqbAyuGPm2KpbZo0OvQRfhr1RgXMokGd2Zaq_kNPuSIsrS8XgA2',
+    appId           : '6ffeb632-a58e-48f0-a728-718f30ac4223',
+    clientId        : '4qjwtmhe55aondpim8kphor9',
+    clientSecret    : 'na2r4uetftAJCmwxxAzCwlD9',
+    appSignature    : '40tOBPuLtO1aeaU4SVsiIIMNyptGUM-wToT9I07VfZIT63JtC-9YX3FB71yXSjbeT17JvYVUln0NCgaXX3cXfnLJq31J7Cqt_1_flFEyUee2qlxF6rvt4hdKxgqSxUjmHKapLeYa-l4-jqA8Azy7U8oQUhjfFxQahy53VCDh8ruiNfl35d10wh7ooYaceSbSdWUhtUcvduzicflTMO3Ymlr_BSgFpMoJbwi09s1Cxxl0QPxZLC_riI7cSA63hA2',
     authUrl         : 'https://auth.exacttargetapis.com/v1/requestToken?legacy=1'
 };
 
